@@ -32,6 +32,10 @@ h1, small, i, sup, sub {
     text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;
 }
 
+h1 i {
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.1em #00ff00, 0 0 0.1em #39ff00;
+}
+
 h4 {
     margin: 0;
     padding: 0;
@@ -246,6 +250,7 @@ article {
     position: fixed;
     bottom: -12px;
     left: 8px;
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.1em #00ff00, 0 0 0.1em #39ff00;
 }
 
 #github-link {
