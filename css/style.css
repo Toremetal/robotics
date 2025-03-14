@@ -247,6 +247,8 @@ article {
     }
 
 #copyright {
+    border-radius: 8px;
+    background-color: #fff;
     position: fixed;
     bottom: -12px;
     left: 8px;
