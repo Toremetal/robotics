@@ -17,7 +17,7 @@ html {
 }
 
 * {
-    text-shadow: 1px 1px 2px #ff0000, 0 0 0.1em #33ff00, 0 0 0.1em #ffffff;
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;
 }
 
 h1 {
