@@ -256,11 +256,12 @@ article {
 }
 
 .high-contrast #copyright {
-    background-color: #000;
+    background-color: #fff;
+    color: #000;
 }
 
 .high-contrast a {
-    color: #3f0;
+    color: #30f;
 }
 
 #github-link {
