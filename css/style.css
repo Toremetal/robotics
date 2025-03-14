@@ -32,9 +32,9 @@ h1, small, i, sup, sub {
     text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;
 }
 
-h1 i {
-    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
-}
+    h1 i {
+        text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
+    }
 
 h4 {
     margin: 0;
@@ -180,6 +180,10 @@ article {
     text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
 }
 
+.high-contrast a {
+    color: #fcff3c;
+}
+
 .high-contrast a:link {
     color: #fcff3c;
     text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue, 0 0 0.1em blue;
@@ -258,10 +262,6 @@ article {
 .high-contrast #copyright {
     background-color: #fff;
     color: #000;
-}
-
-.high-contrast a {
-    color: #30f;
 }
 
 #github-link {
