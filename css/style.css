@@ -18,7 +18,7 @@ html {
 
 * {
     /*text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;*/
-    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #ffffff;
 }
 
 h1 {
@@ -28,13 +28,12 @@ h1 {
     padding: 4px 0 0 20px;
 }
 
-/*h1, small, i, sup, sub {
-    
-    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;
+h1, small, i, sup, sub {
+    /*text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;*/
     text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
 }
 
-h1 i {
+/*h1 i {
     text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
 }*/
 
