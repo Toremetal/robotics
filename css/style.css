@@ -28,7 +28,8 @@ h1 {
 }
 
 h1, small, i, sup, sub {
-    text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
+    /*text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;*/
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.2em #00ff00, 0 0 0.1em #ffffff;
 }
 
 h4 {
