@@ -12,11 +12,9 @@
     <meta property="og:image" name="image" content="img/site-description-image.png">
     <link rel="icon" href="img/enhanced-logo-red.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css">
-    <!--<link rel="stylesheet" href="css/print.css" media="print">-->
-    <link rel="canonical" href="index.html">
+    <script src="js/js.js"></script>
 </head>
-
-<body id="body" class="home">
+<body id="body" class="home" onload="getMode();">
     <a class="skip-link visuallyhidden" href="#main">Skip to content</a>
     <div>
         <div class="wrap">
@@ -30,7 +28,8 @@
                 <nav id="global-nav" aria-label="Main">
                     <h1>
                         <a class="logo-link" href="img/enhanced-logo-o.png" target="_blank" title="Visit the toremetal robotics homepage">
-                            <span class="logo"><img class="img-logo" src="img/enhanced-logo-o-128.png" alt=""></span><span class="visuallyhidden">Visit the toremetal robotics homepage</span></a>
+                            <span class="logo"><img class="img-logo" src="img/enhanced-logo-o-128.png" alt=""></span><span class="visuallyhidden">Visit the toremetal robotics homepage</span>
+                        </a>
                         <i><sup><small>&trade;</small></sup>T<small><small>&copy;</small></small>ReMeTaL Robotics</i>
                     </h1>
                     <input title="Nav Menu" alt="Nav Menu" type="image" src="img/menu.svg" onclick="const j = document.getElementById('nav-menu'); if (j.style.display == 'block') { j.style.display = 'none' } else { j.style.display = 'block' }" id="mobile-nav-menu">
@@ -103,7 +102,8 @@
                                                  srcset="img/elegoo-smart-robot-360.png 360w, img/elegoo-smart-robot-580.png 580w, img/elegoo-smart-robot-700.png 700w, img/elegoo-smart-robot-920.png 920w, img/elegoo-smart-robot-1520.png 1520w"
                                                  sizes="(min-width: 64em) 28vw, (min-width: 48em) 42vw, 90vw"
                                                  loading="lazy"
-                                                 alt="An Elegoo Smart Robot, as seen from the user's perspective."></a>
+                                                 alt="An Elegoo Smart Robot, as seen from the user's perspective.">
+                                        </a>
                                     </div>
                                 </div>
                             </li>
@@ -167,7 +167,7 @@
             </ul>
             <input type="image" src="img/accessibility.svg" alt="accessibility-menu" id="accessibility-menu-btn" title="accessibility-menu" onclick='toggleClass("accessibility-menu", "visuallyhidden")'>
         </footer>
-        <script src="js/js.js"></script>
+        <script>setCopyRight();</script>
     </div>
 </body>
 </html>
