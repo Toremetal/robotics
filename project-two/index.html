@@ -12,10 +12,9 @@
     <meta property="og:image" name="image" content="../img/site-description-image.png">
     <link rel="icon" href="../img/enhanced-logo-red.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css" media="screen" type="text/css">
-    <link rel="canonical" href="index.html">
+    <script src="../js/js.js"></script>
 </head>
-
-<body id="body" class="home">
+<body id="body" class="home" onload="getMode();">
     <a class="skip-link visuallyhidden" href="#main">Skip to content</a>
     <div>
         <div class="wrap">
@@ -173,7 +172,7 @@
             </ul>
             <input type="image" src="../img/accessibility.svg" alt="accessibility-menu" id="accessibility-menu-btn" title="accessibility-menu" onclick='toggleClass("accessibility-menu", "visuallyhidden")'>
         </footer>
-        <script src="../js/js.js"></script>
+        <script>setCopyRight();</script>
     </div>
 </body>
 </html>
