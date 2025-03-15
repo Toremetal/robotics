@@ -200,6 +200,11 @@ article {
         color: #00ff00;
     }
 
+.high-contrast .split-side > p, .high-contrast .split-side > h4 > sub, .high-contrast .split-side a > sup, .high-contrast time {
+    color: #fcff3c; /*#eeff00;*/
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
+}
+
 .image-group {
     display: flex;
     justify-content: space-evenly;
@@ -360,6 +365,11 @@ article {
     #copyright {
         background-color: #fff;
         color: #000;
+    }
+    
+    .split-side > p, .split-side > h4 > sub, .split-side a > sup, time {
+        color: #fcff3c;
+        text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
     }
 }
 
