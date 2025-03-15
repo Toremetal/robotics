@@ -167,49 +167,6 @@ article {
     clear: both;
 }
 
-.high-contrast nav > ul > li > a {
-    background-color: #000;
-}
-
-.high-contrast div, .high-contrast p {
-    background-color: #000;
-    color: #fff;
-    text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
-}
-
-.high-contrast h2 {
-    color: #39ff00;
-    text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
-}
-
-.high-contrast a {
-    color: #fcff3c;
-    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
-}
-
-    .high-contrast a:link {
-        color: #fcff3c;
-        text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue, 0 0 0.1em blue;
-    }
-
-    .high-contrast a:active {
-        color: #ff0000;
-    }
-
-    .high-contrast a:visited {
-        color: #00ff00;
-    }
-
-.high-contrast .split-side > h4 > sub, .high-contrast .split-side a > sup, .high-contrast time {
-    color: #fcff3c; /*#eeff00;*/
-    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
-}
-
-.high-contrast .split-side > p, .high-contrast .split-side p > sup {
-    color: #fff; /*#fdff3c; #eeff00;*/
-    text-shadow: 0.5px 0.5px 0.5px #000000, 0 0 0.01em #000000, 0 0 0.1em #000000;
-}
-
 .image-group {
     display: flex;
     justify-content: space-evenly;
@@ -285,11 +242,6 @@ article {
     text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.1em #00ff00, 0 0 0.1em #39ff00;
 }
 
-.high-contrast #copyright {
-    background-color: #fff;
-    color: #000;
-}
-
 #github-link {
     width: fit-content;
     height: 48px;
@@ -333,15 +285,76 @@ article {
     border-radius: 8px;
 }
 
+/* high-contrast (Dark-Mode: Switched) */
+.high-contrast #copyright {
+    background-color: #fff;
+    color: #000;
+}
+
+.high-contrast body, .high-contrast div {
+    background-color: #000;
+}
+
+.high-contrast a, .high-contrast li, .high-contrast p {
+    color: #fff;
+    text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
+}
+
+.high-contrast #accessibility-menu > li {
+    color: #000;
+}
+
+.high-contrast h2 {
+    color: #39ff00;
+    text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
+}
+
+.high-contrast a {
+    background-color: #000;
+    color: #fcff3c;
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
+}
+
+    .high-contrast a:link {
+        color: #fcff3c;
+        text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue, 0 0 0.1em blue;
+    }
+
+    .high-contrast a:active {
+        color: #ff0000;
+    }
+
+    .high-contrast a:visited {
+        color: #00ff00;
+    }
+
+.high-contrast .split-side > h4 > sub, .high-contrast .split-side a > sup, .high-contrast time {
+    color: #fcff3c;
+    text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
+}
+
+.high-contrast .split-side > p, .high-contrast .split-side p > sup {
+    color: #fff;
+    text-shadow: 0.5px 0.5px 0.5px #000000, 0 0 0.01em #000000, 0 0 0.1em #000000;
+}
+
 @media (prefers-color-scheme: dark) {
-    nav > ul > li > a {
+    #copyright {
+        background-color: #fff;
+        color: #000;
+    }
+
+    body, div {
         background-color: #000;
     }
 
-    div, p {
-        background-color: #000;
+    a, li, p {
         color: #fff;
         text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
+    }
+
+    #accessibility-menu > li {
+        color: #000;
     }
 
     h2 {
@@ -350,8 +363,9 @@ article {
     }
 
     a {
+        background-color: #000;
         color: #fcff3c;
-        text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #00ff00, 0 0 0.1em #000000;
+        text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
     }
 
         a:link {
@@ -367,19 +381,14 @@ article {
             color: #00ff00;
         }
 
-    #copyright {
-        background-color: #fff;
-        color: #000;
-    }
-    
     .split-side > h4 > sub, .split-side a > sup, time {
         color: #fcff3c;
         text-shadow: 0.5px 0.5px 1px #ff0000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
     }
-    
-    .split-side > p {
-        color: #fdff3c;
-        text-shadow: 0.5px 0.5px 1px #000000, 0 0 0.01em #0000ff, 0 0 0.1em #000000;
+
+    .split-side > p, .split-side p > sup {
+        color: #fff;
+        text-shadow: 0.5px 0.5px 0.5px #000000, 0 0 0.01em #000000, 0 0 0.1em #000000;
     }
 }
 
