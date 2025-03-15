@@ -261,14 +261,18 @@ article {
     }
 
 #mobile-nav-menu {
+    margin-top: -8px;
+    margin-right: -8px;
     border-radius: 50%;
     width: 3rem;
     display: none;
-    box-shadow: #000000cc 0.5px 0.5px 0.5px 0.09px;
+    /* box-shadow: #000000cc 0.5px 0.5px 0.5px 0.09px;*/
 }
 
     #mobile-nav-menu:hover {
-        box-shadow: #000000cc 2px 2px 1px 0.12px;
+        transform: scale(0.96);
+        transform: rotate(4deg);
+        /* box-shadow: #000000cc 2px 2px 1px 0.12px;*/
     }
 
 #image-window {
