@@ -304,6 +304,10 @@ article {
     color: #000;
 }
 
+.high-contrast sup, .high-contrast small {
+    text-shadow: 0.5px 0.5px 1px #000000, 0 0 0.01em #000000, 0 0 0.1em #000000;
+}
+
 .high-contrast h2 {
     color: #39ff00;
     text-shadow: 0.5px 0.5px 1px #ff0000ee, 0 0 0.1em blue;
