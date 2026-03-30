@@ -35,7 +35,7 @@
                     <input title="Nav Menu" alt="Nav-Menu" type="image" src="../img/menu.svg" onclick="const j = document.getElementById('nav-menu'); if (j.style.display == 'block') { j.style.display = 'none' } else { j.style.display = 'block' }" id="mobile-nav-menu">
                     <ul id="nav-menu">
                         <li>
-                            <a href="../index.html">Home</a>
+                            <a href="../index.html">Robotics Home</a>
                         </li>
                         <li>
                             <a href="../project-one/index.html">Project 1</a>
@@ -46,9 +46,9 @@
                         <li>
                             <a>Project 2</a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="assembly/index.html">P2: Assembly</a>
-                        </li>
+                        </li>-->
                         <li>
                             <a href="../about/index.html">About</a>
                         </li>
@@ -58,7 +58,22 @@
             <main id="main" class="split">
                 <section>
                     <div class="image-group">
+                        <a style="text-decoration:none;" href="../img/dino-2.png" target="_blank">
+                            <img src="../img/dino-2-360.png" alt="A Lafvin Smart Robot Car modified as the Dinosaur project with legs, as seen from the user's perspective."
+                                 srcset="../img/dino-2-360.png 360w, ../img/dino-2-580.png 580w, ../img/dino-2-700.png 700w, ../img/dino-2-920.png 920w, ../img/dino-2-1520.png 1520w"
+                                 sizes="(min-width: 48em) 28vw, (min-width: 36em) 32vw, 70vw">
+                        </a>
+                        <a style="text-decoration:none;" href="../img/lafvin-smart-robot-1520.png" target="_blank">
+                            <img src="../img/lafvin-smart-robot-580.png" alt="A Lafvin Smart Robot Car, as seen from the user's perspective."
+                                 srcset="../img/lafvin-smart-robot-360.png 360w, ../img/lafvin-smart-robot-580.png 580w, ../img/lafvin-smart-robot-700.png 700w, ../img/lafvin-smart-robot-920.png 920w, ../img/lafvin-smart-robot-1520.png 1520w"
+                                 sizes="(min-width: 48em) 28vw, (min-width: 36em) 32vw, 60vw">
+                        </a>
                         <a style="text-decoration:none;" href="../img/dino.png" target="_blank">
+                            <img src="../img/dino-360.png" alt="A Lafvin Smart Robot Car modified as the Dinosaur project, as seen from the user's perspective."
+                                 srcset="../img/dino-360.png 360w, ../img/dino-580.png 580w, ../img/dino-700.png 700w, ../img/dino-920.png 920w, ../img/dino-1520.png 1520w"
+                                 sizes="(min-width: 48em) 28vw, (min-width: 36em) 32vw, 70vw">
+                        </a>
+                        <!--<a style="text-decoration:none;" href="../img/dino.png" target="_blank">
                             <img src="../img/dino-360.png" alt="A Lafvin Smart Robot Car modified as the Dinosaur project, as seen from the user's perspective."
                                  srcset="../img/dino-360.png 360w, ../img/dino-580.png 580w, ../img/dino-700.png 700w, ../img/dino-920.png 920w, ../img/dino-1520.png 1520w"
                                  sizes="(min-width: 64em) 28vw, (min-width: 48em) 42vw, 90vw">
@@ -67,7 +82,7 @@
                             <img src="../img/lafvin-smart-robot-580.png" alt="A Lafvin Smart Robot Car, as seen from the user's perspective."
                                  srcset="../img/lafvin-smart-robot-360.png 360w, ../img/lafvin-smart-robot-580.png 580w, ../img/lafvin-smart-robot-700.png 700w, ../img/lafvin-smart-robot-920.png 920w, ../img/lafvin-smart-robot-1520.png 1520w"
                                  sizes="(min-width: 64em) 28vw, (min-width: 48em) 42vw, 70vw">
-                        </a>
+                        </a>-->
                     </div>
                     <h2>The Dinosaur Project.</h2>
                     <article>
@@ -77,19 +92,63 @@
                         </p>
                         <h3>What it can do.</h3>
                         <p>
-                            &emsp; &emsp; This little dinosaur can roar and wag its tail. The Dinosaur can be controlled using the IR-Remote included with the Robot-Car kit. The expansion board has a variety of pins available to easily add more components.
+                            &emsp; &emsp; This little dinosaur can walk, drive, roar, and wag its tail. It can detect and maneuver around obstacles or follow an object.
+                            The Dinosaur can be controlled using the IR-Remote included with the Robot-Car kit. The expansion board has a variety of pins for easily adding more components.
                         </p>
+
+                        <h3>What you need:</h3>
+                        <ol style="text-align:left;width:fit-content;margin:0 auto;">
+                            <li>A Lafvin 2wd Smart-Robot-Car.</li>
+                            <li>A Robo-Alive Toy.<sup><small><br>&emsp;&emsp;&emsp;(*or other equivalent substitution, check your local thrift store, it will be cut into peices.)</small></sup></li>
+                            <li>An .INO file with the code to make it operate.</li>
+                        </ol>
+                        <h3>To Get Started:</h3>
+                        <p>
+                            &emsp; &emsp; To build this project yourself, you will need the Lafvin 2WD Smart Robot Car available on Amazon and a Robo-Alive or other substitution of your choice.
+                            The robot car kit does not come with operational code pre-installed. Sample code included with the directions can be installed using the Arduino IDE.
+                            Three additional servos have been added to the  project. Two servos for legs and one for the tail. The right leg servo control pin is A4, the left leg is controlled by pin A5,
+                            and the tail servo is controlled by pin A3. The voice box from the Robo Alive toy is powered by pin A9.
+                        </p>
+                        <h3>Power Supply:</h3>
+                        <p>
+                            &emsp; &emsp; The Arduino board is powered by a custom voltage regulator built using two 7805 voltage regulators, two 104 capacitors, and two 334 capacitors.
+                        </p>
+                        <a style="text-decoration:none;" href="../img/dino-vr.png" target="_blank">
+                            <img style="border-radius:5px;border:1px #000 ridge" src="../img/dino-vr-360.png" alt="A custom voltage regulator, as seen from the user's perspective."
+                                 srcset="../img/dino-vr-360.png 360w, ../img/dino-vr-580.png 580w, ../img/dino-vr-700.png 700w, ../img/dino-vr-920.png 920w, ../img/dino-vr-1520.png 1520w"
+                                 sizes="(min-width: 64em) 28vw, (min-width: 48em) 42vw, 90vw">
+                        </a>
+                        <h3>Assembly order:</h3>
+                        <ol style="text-align:left;width:fit-content;margin:0 auto;">
+                            <li>Assemble the Lafvin 2wd Smart-Robot-Car following the online directions from the website.</li>
+                            <li>Install extra servos or other components as needed.</li>
+                            <li>Carefully disassemble your Robo-Alive Toy and make the necessary modifications.</li>
+                            <li>Add your modified parts wiring in as necessary.</li>
+                            <li>Upload your code using the cloud or local installation of the Arduino IDE.</li>
+                            <li>Enjoy.</li>
+                        </ol>
+                        <h3>Obtaining the code:</h3>
+                        <p>
+                            &emsp; &emsp; A complete operating system code was written for this project and can be downloaded from the &trade;T&copy;ReMeTaL Arduino Cloud Repo
+                            <a title="Operating Code to Upload to the Lafvin Smart Robot Car" href="https://app.arduino.cc/sketches/dabfe481-ec92-4535-bffa-f3bbbfd54a2e?view-mode=preview">Dino-Source-Code<sup>( External Links )</sup></a>.
+                        </p>
+                        <h3>Source code:</h3>
+                        <iframe src="https://app.arduino.cc/sketches/dabfe481-ec92-4535-bffa-f3bbbfd54a2e?view-mode=embed" style="height:620px;width:100%;margin:10px 0" frameborder=0></iframe>
+
                         <footer>
                             <p>
                                 Posted on
                                 <time datetime="2025-03-13 13:00">March 13, 2025</time>
+                                Updated on
+                                <time datetime="2026-03-29 19:07">March 29, 2026</time>
                                 by &trade;T&copy;ReMeTaL.
                             </p>
                         </footer>
                     </article>
                     <div class="space-evenly">
+                        <a href="../project-one/index.html">Project 1</a>
                         <a>Project 2</a>
-                        <a href="assembly/index.html">P2: Assembly</a>
+                        <!--<a href="assembly/index.html">P2: Assembly</a>-->
                     </div>
                 </section>
             </main>
@@ -111,10 +170,7 @@
                         <a href="https://www.dropbox.com/scl/fo/qe2twwkrg52o11l1il5oy/APo8ixPNDqot4ISqGZYwjuE?rlkey=7bwtvl1vd0beo9q2ufuxq48te&e=1&st=r8us9rw9&dl=0" target="_blank">Lafvin Tutorial</a>
                     </li>
                     <li>
-                        <a title="Operating Code to Upload to the Lafvin Smart Robot Car" href="https://app.arduino.cc/sketches/dabfe481-ec92-4535-bffa-f3bbbfd54a2e?view-mode=preview">Lafvin-Source-Code</a>
-                    </li>
-                    <li>
-                        <a title="Operating Code to Upload to the Lafvin Smart Robot Car" href="https://app.arduino.cc/sketches/8aafe50e-9187-4f5d-a511-cb9c8d522943?view-mode=preview">Lafvin-Source-Code<br><sup>stand-alone.ino</sup></a>
+                        <a title="Operating Code to Upload to the Lafvin Smart Robot Car" href="https://app.arduino.cc/sketches/dabfe481-ec92-4535-bffa-f3bbbfd54a2e?view-mode=preview">Dino-Source-Code</a>
                     </li>
                     <li>
                         <a href="https://www.amazon.com/LAFVIN-Chassis-Ultrasonic-Compatible-Arduino/dp/B07YCHCQNK" target="_blank">$ Lafvin on Amazon</a>
@@ -144,11 +200,18 @@
                 </ul>
             </div>
             <ul class="clean-list space-evenly">
-                <li>
+                <1--<li>
                     <a href="https://play.google.com/store/apps/dev?id=7952290850776080706" hreflang="en" target="_blank" title="External Link: &trade;T&copy;REMETAL on Google&reg; Play">
                         <img id="google-play-link" src="../img/google-play.svg"
                              alt="External Link: &trade;T&copy;REMETAL on Google&reg; Play" aria-hidden="true" loading="lazy" title="(External Link) &trade;T&copy;REMETAL on Google&reg; Play">
                         <span class="visuallyhidden">External Link: &trade;T&copy;REMETAL on Google&reg; Play</span>
+                    </a>
+                </li>-->
+                <li>
+                    <a href="https://app.arduino.cc/sketches/dabfe481-ec92-4535-bffa-f3bbbfd54a2e?view-mode=preview" hreflang="en" target="_blank" title="External Link: Dino Source Code on Arduino&reg;">
+                        <img id="google-play-link" src="../img/arduino-logo64.png"
+                             alt="External Link: Dino Source Code on Arduino&reg;" aria-hidden="true" loading="lazy" title="(External Link) Dino Source Code on Arduino&reg;">
+                        <span class="visuallyhidden">External Link: Dino Source Code on Arduino&reg;</span>
                     </a>
                 </li>
                 <li>
